@@ -1,0 +1,22 @@
+
+
+# Define the transistors devices
+*FET
+    NTRANS  POLY1 NDIFF
+    PTRANS  POLY1 PDIFF
+
+# Define the surface junctions
+*S-JUNCTION
+    METAL1   VIA12 CONT
+    VIA12    METAL2
+    METAL2   VIA23
+    VIA23    METAL3
+    CONT     POLY1 NDIFF PDIFF
+    POLY1    NTRANS PTRANS
+
+# Define the edge junctions
+*E-JUNCTION
+    NDIFF   NTRANS
+    PDIFF   PTRANS
+
+

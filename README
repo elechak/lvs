@@ -1,0 +1,38 @@
+
+
+
+
+extract:
+    Extracts a netlist from a lef file
+    extract lef_file
+
+mkgraph.py:
+    Makes a netlist for a homogenous graph
+    mkgraph.py num_nodes num_connections > output
+
+mixgraph.py
+    Takes a netlist (homogenous) from mkgraph.py
+    and rearranges it, but maintains isomorphism
+    mixgraph.py graph > output
+
+nethash:
+    Creates a hash of the homogenous graph
+    nethash -size num_connections graph_file
+
+netview:
+    Views the graph hash in a human readable form
+    netview x.hash
+
+
+
+
+
+0:gnd   2:NTRANS
+1:a     2g:NTRANS 4g:PTRANS
+
+
+
+0  2
+1  2g  4g
+3  2   4
+5  4
